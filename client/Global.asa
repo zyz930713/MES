@@ -1,0 +1,14 @@
+<script language=vbscript runat=server>
+
+sub application_onstart
+
+application("SystemName")="BPS(KEB Production System) Client"
+application("MailServer")="EXKEB2:25"
+application("MailSender")="bps.bj@knowles.com"
+application("HostServer")="10.6.100.57:9811"
+application("ClientServer")="10.6.100.57:9810"
+application("IsAutoStore")="N"
+
+end sub
+
+</script>

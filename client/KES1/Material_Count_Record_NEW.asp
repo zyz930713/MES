@@ -1,0 +1,337 @@
+<!--#include virtual="/WOCF/BOCF_Open.asp" -->
+<%
+
+action=request("action")
+
+if action<>"1" then
+
+end if
+
+
+
+action=request("action")
+if action=1 then
+
+
+
+for i=1 to 20
+			
+			
+			BATCH_NOID=request("BATCH_NO"&i)
+	        Prod_TIMEID=request("Prod_TIME"&i)
+	        SMS_IDID=request("SMS_ID"&i)
+			BATCH_NO=request("BATCH_NO"&i)
+			PRODUCT_TIME=request("Prod_TIME"&i)
+			
+			
+			
+			'response.End()
+			if  SMS_IDID<>"" then
+			 if  BATCH_NO="" or  PRODUCT_TIME=""   then
+			 
+			' response.Write("<script language='javascript'>")
+			' response.Write("alert('生产批号,日期不能为空');")
+			' response.Write("history.back()")
+			' response.Write("<//script>")
+			 
+			 
+			   word="生产批号,日期不能为空。"
+	           response.Redirect("Material_count_record_new.asp?word="&word)
+			 end if
+			
+				set rsT=server.createobject("adodb.recordset")			 
+				SQL="Select * from MATERIAL_COUNT_RECORD_NEW where JOB_NUMBER='"&session("JOB_NUMBER")&"' and SHEET_NUMBER='"&session("SHEET_NUMBER")&"' and SMS_ID='"&SMS_IDID&"' and BATCH_NO='"&BATCH_NO&"' and PRODUCT_TIME='"&PRODUCT_TIME&"'"
+			
+		
+				rsT.open SQL,conn,1,3
+				if rsT.recordcount=0 then 
+				rsT.addnew
+				end if
+				rsT("JOB_NUMBER")=session("JOB_NUMBER")
+				rsT("SHEET_NUMBER")=session("SHEET_NUMBER")
+				rsT("BATCH_NO")=BATCH_NOID
+				rsT("PRODUCT_TIME")=Prod_TIMEID
+				rsT("SMS_ID")=SMS_IDID
+				rsT("SCAN_DATETIME")=now()
+				rsT.update
+				rsT.close	
+				
+						 
+				SQL="Select * from MATERIAL_COUNT_RECORD_NEW_TEMP where JOB_NUMBER='"&session("JOB_NUMBER")&"'  and SMS_ID='"&SMS_IDID&"'"
+				rsT.open SQL,conn,1,3
+				if rsT.recordcount=0 then 
+				rsT.addnew
+				end if
+				rsT("JOB_NUMBER")=session("JOB_NUMBER")
+				rsT("SHEET_NUMBER")=session("SHEET_NUMBER")
+				rsT("BATCH_NO")=BATCH_NOID
+				rsT("PRODUCT_TIME")=Prod_TIMEID
+				rsT("SMS_ID")=SMS_IDID
+				rsT("SCAN_DATETIME")=now()
+				rsT.update
+				rsT.close	
+			
+			end if		 
+		next
+		
+		
+response.Write("<script>window.alert('Save Successfully!\r保存成功!'); dialogArguments.document.getElementById('Next').disabled=false; window.close();</script>")
+       
+end if
+
+
+
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>Record Page</title>
+
+<script language="javascript">
+function toSave()
+
+{
+	with(document.form1)
+	{
+	if (PART_NUMBER1.value=="")
+		{
+		alert("没有输入任何信息，请输入信息!");
+		PART_NUMBER1.focus();
+		return false;
+		}
+	
+		
+	}
+	
+	
+	document.form1.action="Material_Count_Record_NEW.asp?action=1";
+	document.form1.submit();
+}
+function closePage()
+{
+	window.close();
+}
+function checkNum(txtQtyNumber)
+{
+	if(isNaN(txtQtyNumber.value)){ 
+	   alert('Material Qty 必须是数字！') ;
+	   txtQtyNumber.focus(); 
+	  
+	}
+}
+
+</script>
+<link href="/CSS/General.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="/Admin/Section/FormCheck.js" type="text/javascript"></script>
+<script type="text/javascript" src="../Scripts/jquery-1.8.3.js"></script>
+
+<script type="text/javascript">
+
+ function lookup(inputString,i,Linename) {
+ 
+    if(inputString.length == 0) {
+   // Hide the suggestion box.
+   $("#suggestions"+i).hide();
+  } else {
+   $.post("showmember.asp", {queryString: ""+escape(inputString)+"",NO:i,Linename:Linename}, function(data){
+    if(data.length >0) {
+     $("#suggestions"+i).show();
+     $("#autoSuggestionsList"+i).html(unescape(data));
+    }
+   });
+  }
+ } // lookup
+ 
+ 
+  function fill(thisValue,item_name,description,smsid,i) {
+	
+  $("#PART_NUMBER"+i).val(thisValue);
+  $("#SMS_ID"+i).val(smsid);
+  $("#item_name"+i).val(item_name)
+  $("#description"+i).val(description)
+  $("#suggestions"+i).hide();
+ }
+
+</script>
+<style type="text/css">
+ body {
+  font-family: Helvetica;
+  font-size: 11px;
+  color: #000;
+ }
+ 
+ h3 {
+  margin: 0px;
+  padding: 0px; 
+ }
+
+ .suggestionsBox {
+  position: relative;
+  left: 0px;
+  margin: 10px 0px 0px 0px;
+  width: 500px;
+  background-color: #212427;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border: 2px solid #000; 
+  color: #fff;
+ }
+ 
+ .suggestionList {
+  margin: 0px;
+  padding: 0px;
+ }
+ 
+ .suggestionList li {
+  
+  margin: 0px 0px 3px 0px;
+  padding: 3px;
+  cursor: pointer;
+ }
+ 
+ .suggestionList li:hover {
+  background-color: #659CD8;
+ }
+#ActionTable {
+	font-size: 16px;
+}
+</style>
+<link href="../CSS/GeneralKES1.css" rel="stylesheet" type="text/css" />
+<base target="_self">
+</head>
+
+<body bgcolor="#99CCFF">
+
+<form id="form1" name="form1" method="post" action="">
+<table width="100%"  border="1" cellpadding="0" cellspacing="0" bordercolorlight="#000099" bordercolordark="#FFFFFF" id="ActionTable">
+<tr>
+	<td  height="20px" colspan="7" align="center"  style="font-size: 24px"><%=request("word")%><%=session("LINE_NAME")%></td>
+</tr>
+<tr>
+	<td class="t-c-greenCopy" height="20px" colspan="7" align="center">胶水&铜线</td>
+</tr>
+<tr><td>&nbsp;</td><td align="center">站点</td>
+  <td align="center">供应商生产批号</td>
+  <td align="center">供应商生产日期</td>
+<td align="center">型号</td><td align="center">12NC</td>
+<td align="center">ID号</td></tr>
+<%
+
+SQLF="Select b.STATION_DESCRIPTION,a.BATCH_NO,a.PRODUCT_TIME,a.SMS_ID,b.ITEM_NAME,c.DESCRIPTION from MATERIAL_COUNT_RECORD_NEW a left join  material_station b on a.SMS_ID=b.STATION_NO  left join PRODUCT_MODEL c  on  b.item_name=c.ITEM_NAME where JOB_NUMBER='"&session("JOB_NUMBER")&"' and SHEET_NUMBER='"&session("SHEET_NUMBER")&"'"
+
+SQLC="Select count(*) as countqty from MATERIAL_COUNT_RECORD_NEW a  left join material_station b on a.SMS_ID=b.STATION_NO where JOB_NUMBER='"&session("JOB_NUMBER")&"' and SHEET_NUMBER='"&session("SHEET_NUMBER")&"'"
+
+SQLR="Select b.STATION_DESCRIPTION,a.BATCH_NO,a.PRODUCT_TIME,a.SMS_ID,b.ITEM_NAME,c.DESCRIPTION   from MATERIAL_COUNT_RECORD_NEW_TEMP a left join  material_station b on a.SMS_ID=b.STATION_NO left join PRODUCT_MODEL c  on  b.item_name=c.ITEM_NAME where JOB_NUMBER='"&session("JOB_NUMBER")&"'"
+
+
+
+set rsF=server.createobject("adodb.recordset")
+set rsR=server.createobject("adodb.recordset")
+set rsC=server.createobject("adodb.recordset")
+rsF.open SQLF,conn,1,3
+rsR.open SQLR,conn,1,3
+rsC.open SQLC,conn,1,3
+countqty=rsC("countqty")
+
+if not isnull(countqty) then
+counts=cint(countqty)+13
+else
+counts=13
+end if
+	for i=1 to counts
+	PART_NUMBERID="PART_NUMBER"&i
+	suggestionsID="suggestions"&i
+	
+	autoSuggestionsListID="autoSuggestionsList"&i
+	BATCH_NOID="BATCH_NO"&i
+	Prod_TIMEID="Prod_TIME"&i
+	SMS_IDID="SMS_ID"&i
+	descriptionID="description"&i
+	item_nameID="item_name"&i
+	Newcount=rsF.recordcount
+	if not rsF.eof then
+	%>
+	
+    
+    
+<tr>
+  <td width="1%" height="20"><span id="inner_PartNumber"></span> <span class="red">*</span></td>
+  <td width="17%" height="20"><input name="<%=PART_NUMBER&i%>" type="text" id="<%=PART_NUMBERID%>"  value="<%=rsF("STATION_DESCRIPTION")%>"  onkeyup="lookup(this.value,<%=i%>,<%=session("LINE_NAME")%>);" onblur="fill();" >
+  <div class="suggestionsBox" id="<%=suggestionsID%>" style="display: none;">    
+    <div class="suggestionList" id="<%=autoSuggestionsListID%>">
+     &nbsp;&nbsp;&nbsp;
+    </div>
+   </div></td>
+ 
+  <td ><input name="<%=BATCH_NOID%>" type="text" id="<%=BATCH_NOID%>" value="<%=rsF("BATCH_NO")%>" size="20"></td>
+  <td ><input name="<%=Prod_TIMEID%>" type="text" id="<%=Prod_TIMEID%>" value="<%=rsF("PRODUCT_TIME")%>" size="20"></td>
+   <td height="20"><input  name="<%=descriptionID%>" type="text" id="<%=descriptionID%>" value="<%=rsF("DESCRIPTION")%>" size="40" /></td>
+  <td height="20"><input  name="<%=item_nameID%>" id="<%=item_nameID%>" type="text" value="<%=rsF("ITEM_NAME")%>" /></td>
+  <td ><input type="text" name="<%=SMS_IDID%>" id="<%=SMS_IDID%>" value="<%=rsF("SMS_ID")%>" readonly="readonly"></td>
+</tr>
+
+<%rsF.movenext
+
+  elseif (not rsR.eof) and  Newcount=0 then%>
+<tr>
+  <td width="1%" height="20"><span id="inner_PartNumber"></span> <span class="red">*</span></td>
+  <td width="17%" height="20"><input name="<%=PART_NUMBER&i%>" type="text" id="<%=PART_NUMBERID%>"  value="<%=rsR("STATION_DESCRIPTION")%>"  onkeyup="lookup(this.value,<%=i%>,<%=session("LINE_NAME")%>);" onblur="fill();" >
+  <div class="suggestionsBox" id="<%=suggestionsID%>" style="display: none;">    
+    <div class="suggestionList" id="<%=autoSuggestionsListID%>">
+     &nbsp;&nbsp;&nbsp;
+    </div>
+   </div></td>
+  
+  <td width="14%"><input name="<%=BATCH_NOID%>" type="text" id="<%=BATCH_NOID%>" value="<%=rsR("BATCH_NO")%>" size="20"></td>
+  <td width="14%"><input name="<%=Prod_TIMEID%>" type="text" id="<%=Prod_TIMEID%>" value="<%=rsR("PRODUCT_TIME")%>" size="20"></td>
+  <td width="20%" height="20"><input  name="<%=descriptionID%>" type="text" id="<%=descriptionID%>" value="<%=rsR("DESCRIPTION")%>" size="40" /></td>
+  <td width="17%" height="20"><input  name="<%=item_nameID%>" id="<%=item_nameID%>" type="text" value="<%=rsR("ITEM_NAME")%>"/></td>
+  <td width="17%"><input type="text" name="<%=SMS_IDID%>" id="<%=SMS_IDID%>" value="<%=rsR("SMS_ID")%>" readonly="readonly"></td>
+</tr>
+
+
+<%
+
+rsR.movenext
+else
+
+%>
+<tr>
+  <td width="1%" height="20"><span id="inner_PartNumber"></span> <span class="red">*</span></td>
+  <td width="17%" height="20"><input name="<%=PART_NUMBER&i%>" type="text" id="<%=PART_NUMBERID%>"  value=""  onkeyup="lookup(this.value,<%=i%>,'<%=session("LINE_NAME")%>');" onblur="fill();" >
+  <div class="suggestionsBox" id="<%=suggestionsID%>" style="display: none;">    
+    <div class="suggestionList" id="<%=autoSuggestionsListID%>">
+     &nbsp;&nbsp;&nbsp;
+    </div>
+   </div></td>
+  
+  <td width="14%"><input name="<%=BATCH_NOID%>" type="text" id="<%=BATCH_NOID%>" value="" size="20"></td>
+  <td width="14%"><input name="<%=Prod_TIMEID%>" type="text" id="<%=Prod_TIMEID%>" value="" size="20"></td>
+   <td width="20%" height="20"><input  name="<%=descriptionID%>" type="text" id="<%=descriptionID%>" value="" size="40" /></td>
+  <td width="17%" height="20"><input  name="<%=item_nameID%>" id="<%=item_nameID%>" type="text" value="" /></td>
+  <td width="17%"><input type="text" name="<%=SMS_IDID%>" id="<%=SMS_IDID%>" value="" readonly="readonly"></td>
+</tr>
+<%
+end if		
+	next
+
+rsF.close()
+rsR.close()
+%>
+
+<tr><td colspan="7">&nbsp;</td></tr>
+<tr>
+	<td align="center" colspan="7"><input name="save" id="save" type="button" value="Save 保存"  onclick="toSave();"/>&nbsp;
+	 <input name="close" id="close" type="button" value="Close 关闭" onclick="closePage();" />
+	 <input type="hidden" value="<%=counts%>" id="count" name="count" />
+	 <input type="hidden" value="<%=RoutingId%>" id="part_number_id" name="part_number_id" />
+	 <input type="hidden" value="<%=StationId%>" id="currentStationId" name="currentStationId" />
+	
+	 	 </td>
+</tr>
+
+</table>
+</body>
+</html>
+<!--#include virtual="/WOCF/BOCF_Close.asp" -->

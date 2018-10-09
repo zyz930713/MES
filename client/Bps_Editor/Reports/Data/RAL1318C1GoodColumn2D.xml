@@ -1,0 +1,41 @@
+<graph caption='Pieces/h RA Line1318 Cell1' baseFontSize='10' xAxisName='Time' yAxisName='Pieces' decimalPrecision='0' formatNumberScale='0' rotateNames='0' showValues='1' yAxisMaxValue='5500'>
+<set name='8' value='3955' color='AFD8F8' />
+<set name='9' value='4593' color='AFD8F8' />
+<set name='10' value='4346' color='AFD8F8' />
+<set name='11' value='3911' color='AFD8F8' />
+<set name='12' value='4812' color='AFD8F8' />
+<set name='13' value='4407' color='AFD8F8' />
+<set name='14' value='4109' color='AFD8F8' />
+<set name='15' value='4417' color='AFD8F8' />
+<set name='16' value='4644' color='AFD8F8' />
+<set name='17' value='4759' color='AFD8F8' />
+<set name='18' value='4536' color='AFD8F8' />
+<set name='19' value='4924' color='AFD8F8' />
+<set name='20' value='4851' color='AFD8F8' />
+<set name='21' value='4414' color='AFD8F8' />
+<set name='22' value='4428' color='AFD8F8' />
+<set name='23' value='3554' color='AFD8F8' />
+<set name='23' value='4163' color='AFD8F8' />
+<set name='1' value='2433' color='AFD8F8' />
+<set name='2' value='2206' color='AFD8F8' />
+<set name='3' value='3922' color='AFD8F8' />
+<set name='4' value='4962' color='AFD8F8' />
+<set name='5' value='4461' color='AFD8F8' />
+<set name='6' value='4657' color='AFD8F8' />
+<set name='7' value='4307' color='AFD8F8' />
+<set name='8' value='3634' color='AFD8F8' />
+<set name='9' value='' color='AFD8F8' />
+<set name='10' value='' color='AFD8F8' />
+<set name='11' value='' color='AFD8F8' />
+<set name='12' value='' color='AFD8F8' />
+<set name='13' value='' color='AFD8F8' />
+<set name='14' value='' color='AFD8F8' />
+<set name='15' value='' color='AFD8F8' />
+<set name='16' value='' color='AFD8F8' />
+<set name='17' value='' color='AFD8F8' />
+<set name='18' value='' color='AFD8F8' />
+<set name='19' value='' color='AFD8F8' />
+<trendlines>
+<line startValue='' color='ff0000' displayValue='' showOnTop='1' thickness='2'/>
+</trendlines>
+</graph>

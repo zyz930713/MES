@@ -1,0 +1,21 @@
+<%
+function ReplaceCcl(ProductN)
+	ReplaceCcl = Replace(ProductN,"841","")
+	ReplaceCcl = Replace(ReplaceCcl,"071","")
+	ReplaceCcl = Replace(ReplaceCcl,"371","")
+	ReplaceCcl = Replace(ReplaceCcl,"521","")
+	ReplaceCcl = Replace(ReplaceCcl,"801","")
+	ReplaceCcl = Replace(ReplaceCcl,"911","")
+	ReplaceCcl = Replace(ReplaceCcl,"341","")
+	ReplaceCcl = Replace(ReplaceCcl,"171","")
+	ReplaceCcl = Replace(ReplaceCcl,"271","")
+	ReplaceCcl = Replace(ReplaceCcl,"261","")
+	ReplaceCcl = Replace(ReplaceCcl,"4511","6")
+	ReplaceCcl = Replace(ReplaceCcl,"4512","5")
+	ReplaceCcl = Replace(ReplaceCcl,"1311","3")
+	ReplaceCcl = Replace(ReplaceCcl,"1312","4")
+	ReplaceCcl = Replace(ReplaceCcl,"1313","5")
+	ReplaceCcl = Replace(ReplaceCcl,"4812","1")
+	ReplaceCcl = Replace(ReplaceCcl,"3611","2")
+end function
+%>

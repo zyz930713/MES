@@ -1,0 +1,17 @@
+<graph caption='Pieces/h RA Line1312 Cell1' baseFontSize='10' xAxisName='Time' yAxisName='Pieces' decimalPrecision='0' formatNumberScale='0' rotateNames='0' showValues='1' yAxisMaxValue='5500'>
+<set name='8' value='2742' color='0000CC' />
+<set name='9' value='2375' color='0000CC' />
+<set name='10' value='3231' color='0000CC' />
+<set name='11' value='3595' color='0000CC' />
+<set name='12' value='3277' color='0000CC' />
+<set name='13' value='3611' color='0000CC' />
+<set name='14' value='3706' color='0000CC' />
+<set name='15' value='3580' color='0000CC' />
+<set name='16' value='938' color='0000CC' />
+<set name='17' value='' color='0000CC' />
+<set name='18' value='' color='0000CC' />
+<set name='19' value='' color='0000CC' />
+<trendlines>
+<line startValue='4500' color='ff0000' displayValue='4500' showOnTop='1' thickness='2'/>
+</trendlines>
+</graph>

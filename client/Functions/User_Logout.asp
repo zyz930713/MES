@@ -1,0 +1,16 @@
+<%
+session("UserCode")=""
+session("user")= ""
+session("factory")=""
+session("factory_name")=""
+session("role")=""
+session("email")=""
+session("language")=""
+session("series_filter")=""
+session("yieldexclusion_filter")=""
+response.write "<script type='text/javascript'>"
+response.write "window.opener=null;"
+response.write "window.open('','_self');"
+response.write "window.close();"
+response.write "</script>"
+%>

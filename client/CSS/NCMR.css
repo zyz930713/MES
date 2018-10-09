@@ -1,0 +1,63 @@
+body {
+	font-size: 12pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+table {
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+button {
+	border: thin;
+	background-color: #FFE4C4;
+	font-size: 12px;
+	background: Aqua;
+	font-weight: bold;
+}
+.today {
+	background-color: #CCCCCC;
+}
+.t-c-GrayLight {
+	font-size: 12px;
+	font-weight: bold;
+}
+.t-c-greenCopy {
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #339966;
+}
+.t-t-suspend {
+	color: #FFFFFF;
+	background-color: #FF9900;
+}
+.t-t-Confirm {
+	color: #FFFFFF;
+	background-color: #CC9900;
+}
+.t-t-Borrow {
+	color:#FFFFFF;
+	background-color:#73A2EE;
+}
+.t-t-DarkBlue {
+	color: #FFFFFF;
+	background-color: #000066;
+}
+input {
+	font-size: 12px;
+}
+select{
+font-size: 12px;
+}
+.red {
+	font-size: 12px;
+	color: #FF0000;
+}.t-t-transfer {
+
+	color: #FFFFFF;
+	background-color: #660066;
+}.green{
+ 	font-size:12px;
+	color:#006600;
+}.blue{
+	font-size:12px;
+	color:#3333FF;
+}

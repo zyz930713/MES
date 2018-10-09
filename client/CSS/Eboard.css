@@ -1,0 +1,258 @@
+a.none:hover{ text-decoration: none; color: Red; }
+a.none:link { text-decoration: none;  color: Red;  }
+a.none:visited { text-decoration: none; color: Red; }
+a.nonesilver:hover{ text-decoration: none; color: #999999; }
+a.nonesilver:link { text-decoration: none;  color: #708090;  }
+a.nonesilver:visited { text-decoration: none; color: #708090; }
+a.none-FIN:hover {text-decoration: none; color: #666666;}
+a.none-FIN:link {text-decoration: none; color: #666666;}
+a.none-FIN:visited {text-decoration: none; color: #666666;}
+a.none-Book:hover {text-decoration: none; color: #FFFFFF;}
+a.none-Book:link {text-decoration: none; color: #FFFFFF;}
+a.none-Book:visited {text-decoration: none; color: #FFFFFF;}
+a.BookTitle:hover {text-decoration: none; color: #FF0000;}
+a.BookTitle:link {text-decoration: none; color: #006600;}
+a.BookTitle:visited {text-decoration: none; color: #006600;}
+a:hover {
+	color: Red;
+}
+a:visited {
+color: #6495ED;
+}
+body {
+	font-size: 16pt;
+	color: #003366;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+table {
+	font-size: 20px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+span {
+	font-size: 20px;
+}
+select.select1_pink{
+	background: #FFF0F5;
+	font-size: 11px;
+}
+select.select_slightbue {
+	background: #E6E6FA;
+	font-size: 11px;
+}
+textarea {
+	background: #F5F5F5;
+	font-size: 11px;
+}
+textarea.card {
+	border-bottom : 1px solid;
+	border-left : medium none;
+	border-right : medium none;
+	border-top : medium none;
+	background-image : url(../Cards/input_bg.gif);
+	background : url('../Cards/input_bg.gif');
+	}
+button {
+	border: thin;
+	background-color: #FFE4C4;
+	font-size: 30px;
+	background: Aqua;
+	font-weight: bold;
+}
+button.buttonform {
+	border: none;
+	font-size: 11px;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	border-style: none none none none;
+	background-color: transparent;
+	}
+
+.darkbule{
+color: Navy;
+}
+.red {
+	font-size: 30px;
+	color: #FF0000;
+}
+.white {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+.bigred {
+	font-size: 30px;
+	color: #FF0000;
+}
+.t-c-pink {
+	font-size: 11px;
+	color: #990099;
+	background-color: #CCCCFF;
+}
+.t-c-redCopy1 {
+	font-size: 11px;
+	color: #FFFFFF;
+	background-color: #FF99CC;
+}
+.t-c-yellowCopy {
+	font-size: 11px;
+	color: #996600;
+	background-color: #FFCC00;
+}
+.t-c-greenCopy {
+	font-size: 30px;
+	color: #FFFFFF;
+	background-color: #339966;
+}
+.t-b-blue {
+	color: #666666;
+	background-color: #CCCCCC;
+}
+.bigblue {
+	font-size: 16px;
+	color: #993333;
+}
+.t-b-blueReal {
+
+	color: #FFFFFF;
+	background-color: #0099FF;
+}
+.t-b-newyear {
+
+	color: #FFFFFF;
+	background-color: #FF6633;
+}
+.blue {
+	color: #0000FF;
+}
+.green {
+
+	color: #006600;
+}
+.pink {
+	color: #FF00FF;
+}
+.Yellow {
+	color: #FF9900;
+}
+.darkred {
+	color: #FF00FF;
+	font-style: italic;
+	font-weight: normal;
+}
+.darkyellow {
+	color: #CC9900;
+	font-style: italic;
+	font-weight: normal;
+}
+.darkindigo {
+	color: #0066FF;
+	font-style: italic;
+	font-weight: normal;
+}
+.incent {
+	text-indent: 30px;
+}
+.t-t-FIN {
+	color: #666666;
+	background-color: #99CCFF;
+}
+.t-t-FINSli {
+	color: #666666;
+	background-color: #CCFFFF;
+}
+.t-b-midautumn {
+	color: #FFFFFF;
+	background-color: #FF9900;
+}
+.strongred {
+	font-size: 30px;
+	color: #FF0000;
+	font-weight: bold;
+}
+.strangsilver {
+	font-size: 12px;
+	font-weight: bold;
+	color: #999999;
+}
+.t-c-bluryellow {
+	font-size: 11px;
+	color: #996600;
+	background-color: #FFFFCC;
+}
+.d_link {
+	text-decoration: underline;
+}
+.t-t-Book {
+	color: #FFFFFF;
+	background-color: #60DB75;
+}
+.t-t-BookSli {
+	color: #666666;
+	background-color: #E8F7E1;
+}
+.today {
+	background-color: #CCCCCC;
+}
+table.tablelist {
+	line-height: 20px;
+}
+table.Tabledot {
+	border: thin dashed #0000FF;
+}
+tr.Trdot {
+	border: thin dashed #0000FF;
+}
+table.incent {
+	line-height: 15pt;
+}
+.t-c-GrayLight {
+	font-size: 30px;
+	background-color: #E5E5E5;
+	font-weight: bold;
+}
+.t-c-DefectCode {
+	font-size: 20px;
+	background-color: #E5E5E5;
+	font-weight: bold;
+}
+.t-t-Borrow {
+	color:#FFFFFF;
+	background-color:#73A2EE;
+}.FINBig {
+	font-size: 18px;
+	color: #000000;
+	font-weight: bold;
+}
+.t-b-abort {
+	color: #FFFFFF;
+	background-color: #CC9999;
+}
+table.t-b-FinFormDeptType {
+	font-size: 11px;
+	background-color: #E5E5E5;
+	border: 1;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+}.t-t-DarkBlue {
+
+	color: #FFFFFF;
+	background-color: #000066;
+}
+.StrongGreen {
+	color: #006600;
+	font-weight: bold;
+}
+input {
+	font-size: 20px;
+	font-weight: bold;
+}
+input.input_DefectCode {
+	font-size: 20px;
+	font-weight: bold;
+}
+select{
+font-size: 20px;
+}

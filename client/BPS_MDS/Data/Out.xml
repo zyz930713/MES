@@ -1,0 +1,17 @@
+<graph caption='2014-12-18 06:30:00 to 2014-12-18 18:30:00' PYAxisName='Quantity' SYAxisName='FOR(ге)' xAxisName='Line' showValues='1' decimalPrecision='2' formatNumberScale='0' bgcolor='f3f3f3' bgAlpha='70' showColumnShadow='1' divlinecolor='c5c5c5' divLineAlpha='60' showAlternateHGridColor='1' alternateHGridColor='f8f8f8' alternateHGridAlpha='60' useRoundEdges='0'>
+<categories>
+<category name='AF01' /><category name='AF02' /><category name='AF03' /><category name='AF04' /><category name='AF05' />
+</categories>
+<dataset seriesName='Bad' parentYAxis='P' color='FF8080' >
+<set value='393' /><set value='473' /><set value='7' /><set value='672' /><set value='417' />
+</dataset>
+<dataset seriesName='Output' parentYAxis='P' color='8080FF' >
+<set value='7234' /><set value='7562' /><set value='104' /><set value='6880' /><set value='7193' />
+</dataset>
+<dataset seriesName='Good' parentYAxis='P' color='80FF80' >
+<set value='6841' /><set value='7089' /><set value='97' /><set value='6208' /><set value='6776' />
+</dataset>
+<dataset seriesName='FOR(ге)' parentYAxis='S' color='FF0000' numberSuffix='%25' anchorSides='20' anchorRadius='6' anchorBorderColor='009900' >
+<set value='5.432679' /><set value='6.254959' /><set value='6.73077' /><set value='9.767442' /><set value='5.797303' />
+</dataset>
+</graph>

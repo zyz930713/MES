@@ -1,0 +1,11 @@
+<graph caption='26000171BJGAS01B' baseFontSize='10' xAxisName='TestName' yAxisName='FOR' numberSuffix='%25' decimalPrecision='2' formatNumberScale='0' rotateNames='0' showValues='1' yAxisMaxValue='1'>
+<set name='C_R&B' value='61.11' color='0000CC' />
+<set name='C_FRES' value='13.74' color='0000CC' />
+<set name='Multiple' value='12.22' color='0000CC' />
+<set name='C_DER2' value='4.74' color='0000CC' />
+<set name='C_Contact' value='4.5' color='0000CC' />
+<set name='C_THD' value='3.63' color='0000CC' />
+<set name='C_SPLresponse' value='.06' color='0000CC' />
+<set name='C_IMPmin' value='0' color='0000CC' />
+<set name='C_Polarity' value='0' color='0000CC' />
+</graph>

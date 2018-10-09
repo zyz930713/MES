@@ -1,0 +1,28 @@
+<graph caption='Pieces  Line1311 Cell4' baseFontSize='10' xAxisName='Time' yAxisName='Pieces' decimalPrecision='0' formatNumberScale='0' rotateNames='1' showValues='0' yAxisMaxValue='65000'>
+<set name='19:16' value='142' color='AFD8F8' />
+<set name='19:26' value='894' color='AFD8F8' />
+<set name='19:36' value='1730' color='AFD8F8' />
+<set name='19:46' value='2522' color='AFD8F8' />
+<set name='19:56' value='3219' color='AFD8F8' />
+<set name='20:06' value='4043' color='AFD8F8' />
+<set name='20:16' value='4875' color='AFD8F8' />
+<set name='20:25' value='5653' color='AFD8F8' />
+<set name='20:36' value='6201' color='AFD8F8' />
+<set name='20:46' value='6463' color='AFD8F8' />
+<set name='20:55' value='7017' color='AFD8F8' />
+<set name='21:06' value='7815' color='AFD8F8' />
+<set name='21:16' value='8185' color='AFD8F8' />
+<set name='21:26' value='9005' color='AFD8F8' />
+<set name='21:36' value='9727' color='AFD8F8' />
+<set name='21:46' value='10367' color='AFD8F8' />
+<set name='21:56' value='11097' color='AFD8F8' />
+<set name='22:06' value='11687' color='AFD8F8' />
+<set name='22:16' value='12069' color='AFD8F8' />
+<set name='22:26' value='12841' color='AFD8F8' />
+<set name='22:36' value='13447' color='AFD8F8' />
+<set name='22:46' value='14133' color='AFD8F8' />
+<trendlines>
+<line startValue='0' color='ff0000' displayValue='0' showOnTop='1' thickness='2'/>
+<line startValue='0' endValue='18306' color='ff0000' displayValue='' showOnTop='1' thickness='1'/>
+</trendlines>
+</graph>

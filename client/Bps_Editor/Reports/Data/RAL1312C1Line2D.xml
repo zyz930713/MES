@@ -1,0 +1,16 @@
+<graph caption='Pieces  Line1312 Cell1' baseFontSize='10' xAxisName='Time' yAxisName='Pieces' decimalPrecision='0' formatNumberScale='0' rotateNames='1' showValues='0' yAxisMaxValue='65000'>
+<set name='19:19' value='10362' color='AFD8F8' />
+<set name='19:29' value='10653' color='AFD8F8' />
+<set name='19:39' value='10653' color='AFD8F8' />
+<set name='19:49' value='10653' color='AFD8F8' />
+<set name='19:59' value='10653' color='AFD8F8' />
+<set name='20:09' value='10653' color='AFD8F8' />
+<set name='20:19' value='10653' color='AFD8F8' />
+<set name='20:29' value='10653' color='AFD8F8' />
+<set name='20:39' value='10653' color='AFD8F8' />
+<set name='20:49' value='10653' color='AFD8F8' />
+<trendlines>
+<line startValue='0' color='ff0000' displayValue='0' showOnTop='1' thickness='2'/>
+<line startValue='0' endValue='8190' color='ff0000' displayValue='' showOnTop='1' thickness='1'/>
+</trendlines>
+</graph>

@@ -1,0 +1,30 @@
+<graph formatNumberScale='0' showValues='0' numberPrefix='$' numDivLines='3' rotateNames='1' decimalPrecision='0' subCaption='( 2004 to 2006 )' caption='Cumulative Sales' yAxisName='Sales' xAxisName='Products'>
+	<categories>
+		<category name='Product A'/>
+		<category name='Product B'/>
+		<category name='Product C'/>
+		<category name='Product D'/>
+		<category name='Product E'/>
+	</categories>
+	<dataset showValues='0' color='AFD8F8' seriesName='2004'>
+		<set value='25601.34'/>
+		<set value='20148.82'/>
+		<set value='17372.76'/>
+		<set value='35407.15'/>
+		<set value='38105.68'/>
+	</dataset>
+	<dataset showValues='0' color='F6BD0F' seriesName='2005'>
+		<set value='57401.85'/>
+		<set value='41941.19'/>
+		<set value='45263.37'/>
+		<set value='117320.16'/>
+	</dataset>
+
+	<dataset showValues='0' color='8BBA00' seriesName='2006'>
+		<set value='45000.65'/>
+		<set value='44835.76'/>
+		<set value='18722.18'/>
+		<set value='77557.31'/>
+		<set value='92633.68'/>
+	</dataset>
+</graph>

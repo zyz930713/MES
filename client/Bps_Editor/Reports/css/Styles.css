@@ -1,0 +1,22 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+#header{
+	height:82px;
+	width:1180px;
+	background:#FFFFFF url(../images/knowles-logo.jpg) center no-repeat;
+}
+#menu{
+	height:37px;
+	background:#333;
+}
+#content{
+	background-color:#FFFFFF;
+	z-index:1;
+}
+#footer{
+	height:30px;
+	line-height:30px;
+	background:#333;
+	text-align:center;
+}

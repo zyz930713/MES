@@ -1,0 +1,76 @@
+<graph caption='Pieces  Line1318 Cell5' baseFontSize='10' xAxisName='Time' yAxisName='Pieces' decimalPrecision='0' formatNumberScale='0' rotateNames='1' showValues='0' yAxisMaxValue='65000'>
+<set name='07:17' value='20777' color='AFD8F8' />
+<set name='07:18' value='20819' color='AFD8F8' />
+<set name='07:27' value='584' color='AFD8F8' />
+<set name='07:37' value='1089' color='AFD8F8' />
+<set name='07:47' value='1546' color='AFD8F8' />
+<set name='07:57' value='2087' color='AFD8F8' />
+<set name='08:07' value='2674' color='AFD8F8' />
+<set name='08:16' value='3081' color='AFD8F8' />
+<set name='08:27' value='3602' color='AFD8F8' />
+<set name='08:37' value='3817' color='AFD8F8' />
+<set name='08:47' value='4229' color='AFD8F8' />
+<set name='08:57' value='4764' color='AFD8F8' />
+<set name='09:07' value='5235' color='AFD8F8' />
+<set name='09:17' value='5473' color='AFD8F8' />
+<set name='09:27' value='5698' color='AFD8F8' />
+<set name='09:37' value='5899' color='AFD8F8' />
+<set name='09:47' value='6305' color='AFD8F8' />
+<set name='09:57' value='6744' color='AFD8F8' />
+<set name='10:07' value='6773' color='AFD8F8' />
+<set name='10:17' value='6776' color='AFD8F8' />
+<set name='10:27' value='6776' color='AFD8F8' />
+<set name='10:37' value='6776' color='AFD8F8' />
+<set name='10:47' value='6804' color='AFD8F8' />
+<set name='10:57' value='6902' color='AFD8F8' />
+<set name='11:07' value='6974' color='AFD8F8' />
+<set name='11:17' value='6974' color='AFD8F8' />
+<set name='11:27' value='6974' color='AFD8F8' />
+<set name='11:37' value='6974' color='AFD8F8' />
+<set name='11:47' value='7120' color='AFD8F8' />
+<set name='11:57' value='7343' color='AFD8F8' />
+<set name='12:07' value='7704' color='AFD8F8' />
+<set name='12:17' value='8227' color='AFD8F8' />
+<set name='12:27' value='8885' color='AFD8F8' />
+<set name='12:37' value='9582' color='AFD8F8' />
+<set name='12:47' value='10197' color='AFD8F8' />
+<set name='12:57' value='10751' color='AFD8F8' />
+<set name='13:07' value='11415' color='AFD8F8' />
+<set name='13:17' value='11973' color='AFD8F8' />
+<set name='13:27' value='12336' color='AFD8F8' />
+<set name='13:37' value='12493' color='AFD8F8' />
+<set name='13:47' value='13005' color='AFD8F8' />
+<set name='13:57' value='13651' color='AFD8F8' />
+<set name='14:07' value='14355' color='AFD8F8' />
+<set name='14:17' value='15042' color='AFD8F8' />
+<set name='14:27' value='15718' color='AFD8F8' />
+<set name='14:37' value='16428' color='AFD8F8' />
+<set name='14:47' value='17053' color='AFD8F8' />
+<set name='14:57' value='17616' color='AFD8F8' />
+<set name='15:07' value='18187' color='AFD8F8' />
+<set name='15:17' value='18831' color='AFD8F8' />
+<set name='15:27' value='19457' color='AFD8F8' />
+<set name='15:37' value='20034' color='AFD8F8' />
+<set name='15:47' value='20625' color='AFD8F8' />
+<set name='15:57' value='21253' color='AFD8F8' />
+<set name='16:07' value='21844' color='AFD8F8' />
+<set name='16:17' value='22547' color='AFD8F8' />
+<set name='16:27' value='23261' color='AFD8F8' />
+<set name='16:37' value='23740' color='AFD8F8' />
+<set name='16:47' value='24345' color='AFD8F8' />
+<set name='16:57' value='24962' color='AFD8F8' />
+<set name='17:07' value='25727' color='AFD8F8' />
+<set name='17:17' value='26115' color='AFD8F8' />
+<set name='17:27' value='26486' color='AFD8F8' />
+<set name='17:37' value='26985' color='AFD8F8' />
+<set name='17:47' value='27704' color='AFD8F8' />
+<set name='17:57' value='28319' color='AFD8F8' />
+<set name='18:07' value='28959' color='AFD8F8' />
+<set name='18:17' value='29490' color='AFD8F8' />
+<set name='18:27' value='30144' color='AFD8F8' />
+<set name='18:37' value='30759' color='AFD8F8' />
+<trendlines>
+<line startValue='0' color='ff0000' displayValue='0' showOnTop='1' thickness='2'/>
+<line startValue='0' endValue='59202' color='ff0000' displayValue='' showOnTop='1' thickness='1'/>
+</trendlines>
+</graph>

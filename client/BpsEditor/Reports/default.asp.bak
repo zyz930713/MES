@@ -1,0 +1,86 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HV Reports</title>
+<link href="css/default.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="js/jquery.pack.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<div id="menu">
+	<div id="MutiNav">
+		<ul class="multiUl">
+			<li><a class="go" href="###" title="线上产出">Line Reports</a>
+				<blockquote>
+					<div class="ChildNavIn">
+						<a class="First" href="DailyReportHv.asp" target="main">Daily</a>
+						<a class="First" href="WeeklyReportHv.asp" target="main">Weekly</a>
+						<a class="First" href="IntervalReportHv.asp" target="main">Interval</a>
+						<a class="First" href="DailyMaintain.asp" target="main">Maintain</a>
+						<a class="First" href="Maintains.asp" target="main">For QinQi</a>
+						<a class="First" href="DailyOutput.asp" target="main">For JianJun</a>
+					</div>
+				</blockquote>
+			</li>
+			
+			<li class="s">|</li>
+			
+			<li><a class="go" href="###" title="外围产出">Periphery Reports</a>
+				<blockquote>
+					<div class="ChildNavIn">
+						<a class="First" href="DailyReportHvPer.asp" target="main">Daily</a>
+						<a class="First" href="###">Weekly</a>
+					</div>
+				</blockquote>
+			</li>
+
+			<li class="s">|</li>
+			
+			<li><a class="go" href="###" title="Realtime">Realtime</a>
+				<blockquote>
+					<div class="ChildNavIn">
+						<a class="First" href="Realtime.asp" target="main">Realtime</a>
+						<a class="First" href="###" target="main">BDE Stop</a>
+					</div>
+				</blockquote>
+			</li>
+			
+			<li class="s">|</li>
+			
+			<li>
+				<a class="go" href="###" title="测试">待增加</a>
+			</li>
+		</ul>
+		<script type="text/javascript">
+					var mst;
+					jQuery(".multiUl li").hover(function(){
+					var curItem = jQuery(this);
+					mst = setTimeout(function(){
+						curItem.find("blockquote").slideDown('_default');
+						mst = null;
+					});
+					}, function(){
+					if(mst!=null)clearTimeout(mst);
+					jQuery(this).find("blockquote").slideUp('_default');
+					});
+					
+		</script>
+		<div class="clear"></div>
+	</div>
+</div>
+<div id="content">
+<iframe src="DailyReportHv.asp" id="main" name="main" marginheight="0" frameborder="0" scrolling="no" vspace="0" hspace="0" marginwidth="0" width="100%" onLoad="iFrameHeight()">
+</iframe>
+<script type="text/javascript" language="javascript"> 
+function iFrameHeight() { 
+var ifm= document.getElementById("main"); 
+var subWeb = document.frames ? document.frames["main"].document : ifm.contentDocument; 
+if(ifm != null && subWeb != null) { 
+ifm.height = subWeb.body.scrollHeight; 
+} 
+} 
+</script>
+</div>
+</body>
+</html>

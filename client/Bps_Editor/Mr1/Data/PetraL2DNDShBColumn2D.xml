@@ -1,0 +1,3 @@
+<graph caption='' baseFontSize='10' xAxisName='Lost type' yAxisName='Time lost(min)' decimalPrecision='0' formatNumberScale='0' rotateNames='1' showValues='1' yAxisMaxValue='50'>
+<set name='XL1' value='10' color='AFD8F8' />
+</graph>

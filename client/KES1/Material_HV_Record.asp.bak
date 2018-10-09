@@ -1,0 +1,117 @@
+<!--#include virtual="/WOCF/BOCF_Open.asp" -->
+<%
+'SubJobNumber=session("JOB_NUMBER")
+'job=split(SubJobNumber,"-")
+'JobNumber=job(0)
+     if session("JOB_NUMBER")="" then
+	 response.Redirect("Station.asp")
+	 end if
+action=request("action")
+
+
+
+
+if action="1" then
+	
+	
+	
+end if
+
+
+
+
+
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>Record Page</title>
+<script language="javascript">
+function addDefectQty(){
+	if(event.keyCode==13){//Key:Enter
+		
+		toSave();		
+	}
+}
+function toSave()
+{
+	var labelid=document.getElementById('labelId');
+	if(labelid.value.length!=18){
+			alert("Lable ID Error\扫描的签标位数不对，请确认！");
+			document.all.labelId.select();
+			return false;
+	}
+	else
+	{
+	
+	//var lable=labelid.value;
+//		//var deftInfo = window.showModalDialog("GetValueByKey.asp?key=DefectCode&keyValue="+document.all.defect_code.value,window,"dialogHeight:10px;dialogWidth:10px;alwaysLowered:yes");
+////		
+//		var deftInfo = window.showModalDialog("Material_HV_Record2.asp?LabelId="+lable+"&LotNo="+document.all.LotNo.value+"&Update_time="+document.all.Update_time.value+"&EQUIPMENT="+document.all.EQUIPMENT.value,window,"dialogHeight:10px;dialogWidth:10px;alwaysLowered:yes");
+//
+//		if(deftInfo!=""){	
+//			alert(deftInfo);
+//			document.all.LotNo.value="";
+//			
+//			document.all.labelId.select();
+//			return false;
+//		}else{
+//			document.all.EQUIPMENT.value=""
+//			document.all.labelId.value="";
+//			document.all.LotNo.value="";
+//			document.all.labelId.select();
+//		}
+		
+		
+		
+		
+	document.form1.action="Material_HV_Record2.asp";
+	document.form1.submit();
+	}
+}
+function closePage()
+{
+	window.close();
+}
+
+
+</script>
+ 
+<link href="../CSS/GeneralKES1.css" rel="stylesheet" type="text/css" />
+<base target="_self">
+</head>
+
+<body bgcolor="#99CCFF" onload= "javascript:document.all.labelId.focus();">
+<form id="form1" name="form1" method="post" action="">
+<table width="50%"  border="1" cellpadding="0" cellspacing="0" bordercolorlight="#000099" bordercolordark="#FFFFFF" id="ActionTable">
+
+<tr>
+	<td class="t-c-greenCopy" height="20px" colspan="4" align="center">Material  Record</td>
+</tr>
+<tr>
+	<td width="25%" align="center">EQUIPMENT</td>
+	<td width="24%" align="center">Label ID</td>
+	<td width="37%" align="center">Lot NO</td>
+	<td width="14%" align="center">&nbsp;</td>
+</tr>
+		<tr>
+			<td align="center"><input name="EQUIPMENT" type="text" id="EQUIPMENT" onkeydown="if(this.value&&event.keyCode==13){event.keyCode=9;}" value="" size="30"/></td>
+			<td align="center"><input name="labelId" type="text" id="labelId" onkeydown="if(this.value&&event.keyCode==13){event.keyCode=9;}"  value="" size="30"/></td>
+			<td align="center"><input name="LotNo" id="LotNo" type="text" value=""   onKeyDown="addDefectQty()"/></td>
+			<td align="center"><input name="save" id="save" type="button" value="Save 保存"  onclick="toSave();"/></td>
+            
+		</tr>
+
+<tr>
+	<td align="center" colspan="4">&nbsp;
+	 <input name="close" id="close" type="button" value="Close 关闭" onclick="closePage();" />
+	 <input name="Update_time"  id="Update_time" type="hidden" value="<%=now()%>"  />
+	
+	 	 </td>
+</tr>
+
+</table>
+</body>
+</html>
+<!--#include virtual="/WOCF/BOCF_Close.asp" -->

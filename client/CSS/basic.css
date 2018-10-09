@@ -1,0 +1,19 @@
+.TitleLable {
+	font-size: 18px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #000066;
+	height:34px;
+	line-height:34px;
+}
+.inbutton {
+	font-size: 14px;
+	font-weight: bold;
+	border: thin;
+	background: Aqua;
+	border: none;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	border-style: none none none none;
+	}

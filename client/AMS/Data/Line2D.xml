@@ -1,0 +1,35 @@
+<graph caption='Monthly Sales Summary' subcaption='For the year 2004' xAxisName='Month' yAxisMinValue='15000' yAxisName='Sales' decimalPrecision='0' formatNumberScale='0' numberPrefix='$' showNames='1' showValues='0'  showAlternateHGridColor='1' AlternateHGridColor='ff5904' divLineColor='ff5904' divLineAlpha='20' alternateHGridAlpha='5' >
+<set name='Dec' value='93.87759' hoverText='December' />
+<set name='Dec' value='920.8989' hoverText='December' />
+<set name='Dec' value='1.633348' hoverText='December' />
+<set name='Dec' value='4.480821' hoverText='December' />
+<set name='Dec' value='5.204735' hoverText='December' />
+<set name='Dec' value='4.480821' hoverText='December' />
+<set name='Dec' value='51.95525' hoverText='December' />
+<set name='Dec' value='3.008928' hoverText='December' />
+<set name='Dec' value='-4.925653' hoverText='December' />
+<set name='Dec' value='3.008928' hoverText='December' />
+<set name='Dec' value='-4.925653' hoverText='December' />
+<set name='Dec' value='-17.37696' hoverText='December' />
+<set name='Dec' value='-22.68236' hoverText='December' />
+<set name='Dec' value='-21.29525' hoverText='December' />
+<set name='Dec' value='-33.58003' hoverText='December' />
+<set name='Dec' value='-22.30004' hoverText='December' />
+<set name='Dec' value='71.69195' hoverText='December' />
+<set name='Dec' value='40.53526' hoverText='December' />
+<set name='Dec' value='58.33239' hoverText='December' />
+<set name='Dec' value='59.24942' hoverText='December' />
+<set name='Dec' value='61.76277' hoverText='December' />
+<set name='Dec' value='60.00458' hoverText='December' />
+<set name='Dec' value='7.077255' hoverText='December' />
+<set name='Dec' value='1.883375' hoverText='December' />
+<set name='Dec' value='5.713023' hoverText='December' />
+<set name='Dec' value='1.41643' hoverText='December' />
+<set name='Dec' value='11748.98' hoverText='December' />
+<set name='Dec' value='0.000601169' hoverText='December' />
+<set name='Dec' value='0.7' hoverText='December' />
+<set name='Dec' value='0' hoverText='December' />
+<set name='Dec' value='-1' hoverText='December' />
+<set name='Dec' value='-10.04061' hoverText='December' />
+<set name='Dec' value='91.47204' hoverText='December' />
+</graph>

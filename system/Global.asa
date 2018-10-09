@@ -1,0 +1,35 @@
+<script language=vbscript runat=server>
+
+sub application_onstart
+application("SystemName")="MES (制造执行系统)"
+application("HostServer")="192.168.1.5:8002"
+application("ClientServer")="92.168.1.5:8003"
+application("KEB_BPS_System_DoNet")="http://192.168.1.5:9812/"
+application("ChartServer")="KES-WEB:8300"
+application("MailServer")="EXKEB2:25"
+application("MailSender")="bps.bj@www.com"
+application("active_user")=0
+application("longdateformat")="yyyymmdd hhnnss"
+application("shortdateformat")="yyyymmdd"
+application("F_shortdateformat")="@yyyymmdd@"
+application("veryshorttimeformat")="hh"
+application("LCD_Welcome")="Monitor\LCDWelcome"
+end sub
+
+sub session_onstart
+application.lock
+'当前用户数量加1
+if application("active_user")>=0 then
+application("active_user")=application("active_user")+1
+else
+application("active_user")=0
+end if
+application.unlock
+end sub
+
+Sub Session_OnEnd
+application.lock
+application("active_user")=application("active_user")-1
+application.unlock
+End Sub
+</script>

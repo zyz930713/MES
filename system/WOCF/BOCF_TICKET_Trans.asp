@@ -1,0 +1,3 @@
+<%
+connTicket.begintrans
+%>

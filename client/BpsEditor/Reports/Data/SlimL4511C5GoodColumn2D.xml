@@ -1,0 +1,17 @@
+<graph caption='Pieces/h Slim Line4511 Cell5' baseFontSize='10' xAxisName='Time' yAxisName='Pieces' decimalPrecision='0' formatNumberScale='0' rotateNames='0' showValues='1' yAxisMaxValue='5500'>
+<set name='8' value='2355' color='AFD8F8' />
+<set name='9' value='2680' color='AFD8F8' />
+<set name='10' value='2825' color='AFD8F8' />
+<set name='11' value='1945' color='AFD8F8' />
+<set name='12' value='1797' color='AFD8F8' />
+<set name='13' value='2669' color='AFD8F8' />
+<set name='14' value='2542' color='AFD8F8' />
+<set name='15' value='2981' color='AFD8F8' />
+<set name='16' value='785' color='AFD8F8' />
+<set name='17' value='' color='AFD8F8' />
+<set name='18' value='' color='AFD8F8' />
+<set name='19' value='' color='AFD8F8' />
+<trendlines>
+<line startValue='' color='ff0000' displayValue='' showOnTop='1' thickness='2'/>
+</trendlines>
+</graph>

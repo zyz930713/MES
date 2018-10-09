@@ -1,0 +1,39 @@
+<graph caption='FOR RA Line1318 Cell1' baseFontSize='10' xAxisName='Time' yAxisName='FOR' numberSuffix='%25' decimalPrecision='2' formatNumberScale='0' rotateNames='0' showValues='1' yAxisMaxValue='1'>
+<set name='8' value='1.79' color='AFD8F8' />
+<set name='9' value='1.31' color='AFD8F8' />
+<set name='10' value='1.9' color='AFD8F8' />
+<set name='11' value='1.34' color='AFD8F8' />
+<set name='12' value='2.35' color='AFD8F8' />
+<set name='13' value='1.89' color='AFD8F8' />
+<set name='14' value='1.27' color='AFD8F8' />
+<set name='15' value='1.45' color='AFD8F8' />
+<set name='16' value='1.15' color='AFD8F8' />
+<set name='17' value='.94' color='AFD8F8' />
+<set name='18' value='1.13' color='AFD8F8' />
+<set name='19' value='.85' color='AFD8F8' />
+<set name='20' value='1.28' color='AFD8F8' />
+<set name='21' value='2.6' color='AFD8F8' />
+<set name='22' value='4.49' color='AFD8F8' />
+<set name='23' value='2.2' color='AFD8F8' />
+<set name='23' value='2.51' color='AFD8F8' />
+<set name='1' value='3.76' color='AFD8F8' />
+<set name='2' value='4' color='AFD8F8' />
+<set name='3' value='2.15' color='AFD8F8' />
+<set name='4' value='2.01' color='AFD8F8' />
+<set name='5' value='1.65' color='AFD8F8' />
+<set name='6' value='1.75' color='AFD8F8' />
+<set name='7' value='1.58' color='AFD8F8' />
+<set name='8' value='1.62' color='AFD8F8' />
+<set name='9' value='' color='AFD8F8' />
+<set name='10' value='' color='AFD8F8' />
+<set name='11' value='' color='AFD8F8' />
+<set name='12' value='' color='AFD8F8' />
+<set name='13' value='' color='AFD8F8' />
+<set name='14' value='' color='AFD8F8' />
+<set name='15' value='' color='AFD8F8' />
+<set name='16' value='' color='AFD8F8' />
+<set name='17' value='' color='AFD8F8' />
+<set name='18' value='' color='AFD8F8' />
+<set name='19' value='' color='AFD8F8' />
+<trendlines><line startValue='0' color='ff0000' displayValue='0' showOnTop='1' thickness='2'/></trendlines>
+</graph>
